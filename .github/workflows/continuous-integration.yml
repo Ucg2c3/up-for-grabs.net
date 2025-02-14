@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Ruby
-        uses: ruby/setup-ruby@bfefad842bb982ff05b233bcbc1571d97a87e69f
+        uses: ruby/setup-ruby@d781c1b4ed31764801bfae177617bb0446f5ef8d
       - name: Build and test Jekyll site
         run: |
           bundle install
@@ -51,7 +51,7 @@ jobs:
       - uses: codespell-project/actions-codespell@v2
         with:
           skip: '**/*.ai,Gemfile*,package-lock.json,**/*.css'
-          ignore_words_list: gnerate,allready,hass,noice,dota,paket,testng,radis
+          ignore_words_list: gnerate,allready,hass,noice,dota,paket,testng,radis,Lins
 
   upload:
     runs-on: ubuntu-latest
